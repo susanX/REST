@@ -6,5 +6,21 @@
 </head>
 <body>
   <h1>Home</h1>
+  <!--Cars will be appended here  -->
+  <ul id="cars-list"></ul>
+
+  <!-- Your Handlebars script -->
+  <script id="car-template" type="text/x-handlebars-template">
+    <li>{{this.name}} - {{this.bhp}}</li>
+  </script>
+
+  <form action ="/cars/submit" method="post">
+    <input type="text" name="id">
+    <button type="submit">Submit</button>
+  </form>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" charset="utf-8"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.min.js" charset="utf-8"></script>
+<script src="../main.js"></script>
 </body>
 </html>

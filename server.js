@@ -31,7 +31,7 @@ var Schema = mongoose.Schema;
 // Its currently hard hard but you should be able to query the database and do the
 // same thing with the results
 app.get('/cars', function(req, res){
-    var cars = [{name: 'Mercedes', bhp: 100}, {name: 'Bentley', bhp:100}];
+    var cars = [{name: 'Mercedes1', bhp: 100}, {name: 'Bentley1', bhp:100}];
     return res.json(cars);
 });
 ////-----
